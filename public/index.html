@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#317EFB">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/manifest.webmanifest">
 
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,10 +14,10 @@
 <meta name="msapplication-starturl" content="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" type="png" sizes="192x192" href="/public/icons/icon-192x192.png">
-<link rel="apple-touch-icon" type="png" sizes="192x192" href="/public/icons/icon-192x192.png">
+<link rel="icon" type="png" sizes="192x192" href="/assets/images/icon-192x192.png">
+<link rel="apple-touch-icon" type="png" sizes="192x192" href="/assets/images/icon-192x192.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <title>Budget Tracker</title>
 </head>
 <body>
@@ -50,11 +50,11 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
+  <script src="/assets/js/index.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("service-worker.js")
+        navigator.serviceWorker.register("/service-worker.js")
           .then(reg => {
             console.log("We found your service worker file!", reg);
           });
