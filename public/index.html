@@ -32,7 +32,7 @@
     </div>
     <div class="form">
       <input class="fields" type="text" id="t-name" placeholder="Name of transaction" />
-      <input class="fields" type="number" min="0" id="t-amount" placeholder="Transaction amount" />
+      <input class="fields" type="number" min="0" id="t-amount" placeholder="Transaction amount" /><br>
       <button class="bg-success" id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button class="bg-warning" id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
@@ -40,7 +40,7 @@
 
     <div class="transactions fields">
       <table class="bg-white">
-        <thead>
+        <thead class="bg-light">
           <th>Transaction</th>
           <th>Amount</th>
         </thead>
@@ -50,8 +50,8 @@
       </table>
     </div>
 
-    <canvas class="col-md-6" id="myChart"></canvas>
-    <div class="total col-md-6">
+    <canvas class="col-md-5 offset-md-1" id="myChart"></canvas>
+    <div class="total col-md-5">
       <div class="total">Total:$<span id="total">0</span></div>
     </div>
   </div>
