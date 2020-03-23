@@ -52,7 +52,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script type="text/javascript" src="/assets/js/budget.js"></script>
   <script>
-    if ("serviceWorker" in navigator) {
+    if (!navigator.serviceWorker.controller) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("/service-worker.js")
           .then(reg => {
@@ -61,5 +61,6 @@
       });
     }
   </script>
+
 </body>
 </html>

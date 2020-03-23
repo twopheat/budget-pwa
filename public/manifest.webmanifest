@@ -16,5 +16,7 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "start_url": "/",
+  //"start_url": "https://budget-pwa1.herokuapp.com/",
+  "scope": "/",
   "display": "standalone"
 }
