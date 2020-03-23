@@ -1,14 +1,14 @@
 {
-  "name": "Banking PWA",
-  "short_name": "bank-pwa",
+  "name": "Budget Tracker",
+  "short_name": "budget-tracker",
   "icons": [
     {
-      "src": "/assets/images/icon-192x192.png",
+      "src": "./assets/images/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/images/icon-512x512.png",
+      "src": "./assets/images/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -16,7 +16,6 @@
   "theme_color": "#334898",
   "background_color": "#ffffff",
   "start_url": "/",
-  //"start_url": "https://budget-pwa1.herokuapp.com/",
   "scope": "/",
   "display": "standalone"
 }
